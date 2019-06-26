@@ -8,7 +8,13 @@
 #include <algorithm>
 
 using namespace std;
+TipoEntero Tierra::getAltura() {
+    return ALTURA;
+}
 
+TipoEntero Tierra::getAncho() {
+    return ANCHO;
+}
 Tierra::Tierra() {
     plano.resize(ALTURA);
     for (auto& item: plano)
