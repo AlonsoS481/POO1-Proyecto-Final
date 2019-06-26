@@ -68,7 +68,7 @@ void Menu::removerObjeto() {
 
 void Menu::dibujarMapa() {
     limpiar();
-    tierra.actualizarTierra();
+//    tierra.actualizarTierra();
     tierra.dibujarTierra();
     cout << '\n';
     tierra.imprimirObjetos();

@@ -6,22 +6,40 @@
 #include <string>
 #include <iomanip>
 #include <algorithm>
+#include <map>
+
+map<char,sf::Color>colores ={{'R',sf::Color::Red},{'B',sf::Color::Blue},{'G',sf::Color::Green}};
 
 using namespace std;
+TipoEntero Tierra::getAltura() {
+    return ALTURA;
+}
+
+TipoEntero Tierra::getAncho() {
+    return ANCHO;
+}
+
 
 Tierra::Tierra() {
-    plano.resize(ALTURA);
-    for (auto& item: plano)
-        item.resize(ANCHO);
+    plano=nullptr;
 }
+  //  plano.resize(ALTURA);
+    //for (auto& item: plano)
+      //  item.resize(ANCHO);
+//}
 
 Tierra::Tierra(TipoEntero altura, TipoEntero ancho) {
-    plano.resize(altura);
-    for (auto& item: plano)
-        item.resize(ancho);
+    plano = new sf::RenderWindow(
+            sf::VideoMode(altura,altura),"Proyecto Final");
+    //plano.resize(altura);
+    //for (auto& item: plano)
+      //  item.resize(ancho);
 }
 
-Tierra::~Tierra() {}
+Tierra::~Tierra() {
+    delete plano;
+    plano= nullptr;
+}
 
 void Tierra::adicionarObjeto(Objeto* objeto) {
     objetos.emplace_back(objeto);
@@ -56,28 +74,27 @@ void Tierra::imprimirObjetos() {
     }
 }
 void Tierra::actualizarTierra() {
-    for (auto &row: plano)
-        for (auto &cell: row)
-            cell = COLOR;
+    for (auto &item: objetos) {
+        sf::CircleShape shape(10);
+        shape.setFillColor(colores[item->getColor()]);
+        shape.setPosition(item->getPosX(), item->getPosY());
+        plano->draw(shape);
 
-    for (auto& item: objetos)
-        plano[item->getPosX()][item->getPosY()]
-                = item->getColor();
-}
-
-void Tierra::dibujarTierra() {
-    cout << '\n';
-    cout << setw(3) << ' ';
-    for (auto j = 0; j < getAncho(); ++j)
-        cout << setw(3) << j;
-    cout << '\n';
-
-    for (auto i = 0; i < getAltura(); ++i) {
-        cout << setw(3) << i;
-        for (auto j = 0; j < getAncho(); ++j) {
-            cout << setw(3) << plano[i][j];
-        }
-        cout << '\n';
     }
+}
+void Tierra::dibujarTierra() {
+    if(plano== nullptr) return;
+    while (plano->isOpen()){
+       sf::Event event;
+        while (plano->pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+               plano->close();
+        }
+        plano->clear();
+        actualizarTierra();
+        plano->display();
+  }
+
 }
 

@@ -6,43 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/home/utec/POO1-Proyecto-Final/Menu.cpp
-Menu.h
-/home/utec/POO1-Proyecto-Final/Menu.h
-iostream
--
-string
--
-cstdio
--
-
-/home/utec/POO1-Proyecto-Final/Menu.h
+/home/utec/Documentos/POO1-Proyecto-Final/Menu.h
 Tierra.h
-/home/utec/POO1-Proyecto-Final/Tierra.h
+/home/utec/Documentos/POO1-Proyecto-Final/Tierra.h
 Tipos.h
-/home/utec/POO1-Proyecto-Final/Tipos.h
+/home/utec/Documentos/POO1-Proyecto-Final/Tipos.h
 iostream
 -
 limits
 -
 
-/home/utec/POO1-Proyecto-Final/Objeto.h
+/home/utec/Documentos/POO1-Proyecto-Final/Objeto.h
 iostream
 -
 Tipos.h
-/home/utec/POO1-Proyecto-Final/Tipos.h
+/home/utec/Documentos/POO1-Proyecto-Final/Tipos.h
 
-/home/utec/POO1-Proyecto-Final/Tierra.h
+/home/utec/Documentos/POO1-Proyecto-Final/Tierra.h
 iostream
+-
+SFML/Graphics.hpp
 -
 vector
 -
 Tipos.h
-/home/utec/POO1-Proyecto-Final/Tipos.h
+/home/utec/Documentos/POO1-Proyecto-Final/Tipos.h
 Objeto.h
-/home/utec/POO1-Proyecto-Final/Objeto.h
+/home/utec/Documentos/POO1-Proyecto-Final/Objeto.h
 
-/home/utec/POO1-Proyecto-Final/Tipos.h
+/home/utec/Documentos/POO1-Proyecto-Final/Tipos.h
 string
 -
+
+/home/utec/Documentos/POO1-Proyecto-Final/main.cpp
+iostream
+-
+SFML/Graphics.hpp
+-
+Menu.h
+/home/utec/Documentos/POO1-Proyecto-Final/Menu.h
 

@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/utec/POO1-Proyecto-Final/Menu.cpp" "/home/utec/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles/game.dir/Menu.cpp.o"
-  "/home/utec/POO1-Proyecto-Final/Objeto.cpp" "/home/utec/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles/game.dir/Objeto.cpp.o"
-  "/home/utec/POO1-Proyecto-Final/Tierra.cpp" "/home/utec/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles/game.dir/Tierra.cpp.o"
-  "/home/utec/POO1-Proyecto-Final/Tipos.cpp" "/home/utec/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles/game.dir/Tipos.cpp.o"
-  "/home/utec/POO1-Proyecto-Final/main.cpp" "/home/utec/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles/game.dir/main.cpp.o"
+  "/home/utec/Documentos/POO1-Proyecto-Final/Menu.cpp" "/home/utec/Documentos/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles/game.dir/Menu.cpp.o"
+  "/home/utec/Documentos/POO1-Proyecto-Final/Objeto.cpp" "/home/utec/Documentos/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles/game.dir/Objeto.cpp.o"
+  "/home/utec/Documentos/POO1-Proyecto-Final/Tierra.cpp" "/home/utec/Documentos/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles/game.dir/Tierra.cpp.o"
+  "/home/utec/Documentos/POO1-Proyecto-Final/Tipos.cpp" "/home/utec/Documentos/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles/game.dir/Tipos.cpp.o"
+  "/home/utec/Documentos/POO1-Proyecto-Final/main.cpp" "/home/utec/Documentos/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles/game.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
