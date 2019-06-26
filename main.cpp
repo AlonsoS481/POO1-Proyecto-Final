@@ -3,9 +3,9 @@
 #include "Menu.h"
 
 int main() {
-    Menu menu;
-    menu.ejecutar();
-
+    Tierra barranco(400,400);
+    barranco.adicionarObjeto(new Objeto("Utec",'B',30,30));
+    barranco.dibujarTierra();
     return 0;
 }
 
