@@ -14,12 +14,18 @@ using namespace std;
 TipoEntero Tierra::getAltura() {
     return ALTURA;
 }
+<<<<<<< HEAD
 
 TipoEntero Tierra::getAncho() {
     return ANCHO;
 }
 
+=======
+>>>>>>> 2d43e424b181bc25ebaf23c57121ce96686ec79f
 
+TipoEntero Tierra::getAncho() {
+    return ANCHO;
+}
 Tierra::Tierra() {
     plano=nullptr;
 }
