@@ -2,11 +2,8 @@
 #include <SFML/Graphics.hpp>
 #include "Menu.h"
 int main() {
-    Tierra barranco(900,900);
-    barranco.adicionarObjeto(new Hoteles("Utec","cinco","Avenido xd","Abierto",'R',30,30));
-    barranco.adicionarObjeto(new Museos("Museo de Cera","Satelite Chico Francia","Chupetin Trujillo",'B',90,90));
-    barranco.adicionarObjeto(new Restaurantes("Bao","Avenida Larco","Marina","Cangre Burguer",'G',30,90));
-    barranco.dibujarTierra();
+    Menu menu;
+    menu.ejecutar();
     return 0;
 }
 

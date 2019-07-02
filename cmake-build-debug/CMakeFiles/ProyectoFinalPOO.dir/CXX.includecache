@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Hoteles.cpp
-Hoteles.h
-C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Hoteles.h
-
 C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Hoteles.h
 Tipos.h
 C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Tipos.h
@@ -42,10 +38,6 @@ C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Hoteles.h
 Museos.h
 C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Museos.h
 
-C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Museos.cpp
-Museos.h
-C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Museos.h
-
 C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Museos.h
 Tipos.h
 C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Tipos.h
@@ -57,10 +49,6 @@ iostream
 -
 Tipos.h
 C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Tipos.h
-
-C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Restaurantes.cpp
-Restaurantes.h
-C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Restaurantes.h
 
 C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Restaurantes.h
 iostream
@@ -85,14 +73,6 @@ C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Objeto.h
 C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Tipos.h
 string
 -
-
-C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/main.cpp
-iostream
--
-SFML/Graphics.hpp
--
-Menu.h
-C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Menu.h
 
 C:/shared/SFML-2.5.1/include/SFML/Config.hpp
 TargetConditionals.h

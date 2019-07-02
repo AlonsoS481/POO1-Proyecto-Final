@@ -2,13 +2,13 @@
 // Created by utec on 21/06/19.
 //
 
-#include "Menu.h"
+#include  "Menu.h"
 #include <iostream>
 #include <string>
 #include <cstdio>
 using namespace std;
 enum class Opciones { Agregar=1, Remover, Mostrar}; // se usa un tipo enumerado para indicar las opciones
-
+Tierra barranco(900,900);
 void limpiar() {
     cout << "\033[2J\033[0;0H";
 }
@@ -34,7 +34,7 @@ void Menu::agregarObjeto()
 {
     auto nombre = input<TipoString>("Ingrese Nombre : ");
     auto color  = input<TipoCaracter>("Ingrese color (Un caracter): ");
-
+    auto tipo = input<TipoCaracter >("Ingrese el tipo de objeto('H','R','M'): ");
     auto x = input<TipoEntero>("Ingrese posicion X : ");
     while (x < 0 || x >= tierra.getAncho()) {
         cout << "Posicion X Incorrecta, los limites son: 0, "
@@ -48,14 +48,20 @@ void Menu::agregarObjeto()
               << tierra.getAltura() - 1 << "\n";
         y = input<TipoEntero>("Ingrese posicion Y : ");
     }
-
-    tierra.adicionarObjeto(new Objeto(nombre, color, x, y));
+    switch(tipo){
+        case 'H':
+            barranco.adicionarObjeto(new Hoteles(nombre,"cinco","Avenido xd","Abierto",color,x,y));
+        case 'R':
+            barranco.adicionarObjeto(new Restaurantes(nombre,"cinco","Avenido xd","Abierto",color,x,y));
+        case 'M':
+            barranco.adicionarObjeto(new Museos(nombre,"Avenido xd","Abierto",color,x,y));
+    }
 }
 
 void Menu::removerObjeto() {
     auto nombre = input<TipoString>("Ingrese Nombre: ");
 
-    auto obj = tierra.removerObjeto(nombre);  //-- separa el objeto de la tierra
+    auto obj = barranco.removerObjeto(nombre);  //-- separa el objeto de la tierra
     if (obj == nullptr) {
         cout << "Objeto No existe\n";
     }
@@ -67,13 +73,8 @@ void Menu::removerObjeto() {
 }
 
 void Menu::dibujarMapa() {
-    limpiar();
-//    tierra.actualizarTierra();
-    tierra.dibujarTierra();
-    cout << '\n';
-    tierra.imprimirObjetos();
-    cout << '\n';
-    esperar();
+    barranco.dibujarTierra();
+
 }
 
 void Menu::ejecutar() {
