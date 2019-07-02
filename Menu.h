@@ -9,6 +9,9 @@
 #include "Tipos.h"
 #include <iostream>
 #include <limits>
+#include "Restaurantes.h"
+#include "Hoteles.h"
+#include "Museos.h"
 using namespace std;
 
 template <typename T>

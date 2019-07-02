@@ -8,13 +8,13 @@
 #include "Tipos.h"
 using namespace std;
 
-
 class Objeto {
 private:
-    string        nombre;
     TipoCaracter  color;
     TipoEntero    posX;
     TipoEntero    posY;
+protected:
+    TipoString nombre;
 public:
     Objeto();
     Objeto(const TipoString& nombre, TipoCaracter color,

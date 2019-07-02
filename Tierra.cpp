@@ -14,18 +14,13 @@ using namespace std;
 TipoEntero Tierra::getAltura() {
     return ALTURA;
 }
-<<<<<<< HEAD
-
+//<<<<<<< HEAD
 TipoEntero Tierra::getAncho() {
     return ANCHO;
 }
 
-=======
->>>>>>> 2d43e424b181bc25ebaf23c57121ce96686ec79f
-
-TipoEntero Tierra::getAncho() {
-    return ANCHO;
-}
+//=======
+//>>>>>>> 2d43e424b181bc25ebaf23c57121ce96686ec79f
 Tierra::Tierra() {
     plano=nullptr;
 }
@@ -33,15 +28,13 @@ Tierra::Tierra() {
     //for (auto& item: plano)
       //  item.resize(ANCHO);
 //}
-
 Tierra::Tierra(TipoEntero altura, TipoEntero ancho) {
     plano = new sf::RenderWindow(
-            sf::VideoMode(altura,altura),"Proyecto Final");
+            sf::VideoMode(altura,ancho),"Proyecto Final");
     //plano.resize(altura);
     //for (auto& item: plano)
       //  item.resize(ancho);
 }
-
 Tierra::~Tierra() {
     delete plano;
     plano= nullptr;
@@ -50,6 +43,7 @@ Tierra::~Tierra() {
 void Tierra::adicionarObjeto(Objeto* objeto) {
     objetos.emplace_back(objeto);
 }
+
 Objeto* Tierra::removerObjeto(string& nombre) {
     // Si vector esta vacio
     if (objetos.size() == 0)

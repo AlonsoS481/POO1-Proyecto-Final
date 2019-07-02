@@ -15,7 +15,6 @@ const TipoEntero ALTURA = 21;
 const TipoEntero ANCHO  = 21;
 const TipoCaracter COLOR ='.';
 
-
 class Tierra {
 private:
     sf::RenderWindow* plano;
