@@ -7,7 +7,7 @@
 #include <string>
 #include <cstdio>
 using namespace std;
-enum class Opciones { Agregar=1, Remover, Mostrar}; // se usa un tipo enumerado para indicar las opciones
+enum class Opciones { Agregar=1, Remover, Mostrar,Mejores}; // se usa un tipo enumerado para indicar las opciones
 Tierra barranco(900,900);
 void limpiar() {
     cout << "\033[2J\033[0;0H";
@@ -27,13 +27,13 @@ void Menu::imprimirMenu() {
     cout << "1. Agregar un nuevo objeto\n";
     cout << "2. Remover objeto\n";
     cout << "3. Dibujar Mapa\n\n";
+    cout << "4. Mejores Lugares\n\n";
     cout << "0. Para Salir\n\n";
 }
 
 void Menu::agregarObjeto()
 {
     auto nombre = input<TipoString>("Ingrese Nombre : ");
-    auto color  = input<TipoCaracter>("Ingrese color (Un caracter): ");
     auto x = input<TipoEntero>("Ingrese posicion X : ");
     while (x < 0 || x >= tierra.getAncho()) {
         cout << "Posicion X Incorrecta, los limites son: 0, "
@@ -56,7 +56,7 @@ void Menu::agregarObjeto()
             auto calih=input<TipoDoble >("Ingrese la calificacion: ");
             auto formah=input<TipoCaracter >("Ingrese la forma: ");
             auto tamanoh=input<TipoEntero >("Ingrese el tamaño: ");
-            barranco.adicionarObjeto(new Hoteles(nombre,direccionh,estrellas,disponibilidad,color,x,y,calih,formah,tamanoh));
+            barranco.adicionarObjeto(new Hoteles(nombre,direccionh,estrellas,disponibilidad,'R',x,y,calih,formah,tamanoh));
             break;}
         case 'R':{
             auto direccionr=input<TipoString>("Ingrese la direccion: ");
@@ -65,7 +65,7 @@ void Menu::agregarObjeto()
             auto calir=input<TipoDoble >("Ingrese la calificacion: ");
             auto formar=input<TipoCaracter >("Ingrese la forma: ");
             auto tamanor=input<TipoEntero >("Ingrese el tamaño: ");
-            barranco.adicionarObjeto(new Restaurantes(nombre,direccionr,tipodecomida,edeldia,color,x,y,calir,formar,tamanor));
+            barranco.adicionarObjeto(new Restaurantes(nombre,direccionr,tipodecomida,edeldia,'G',x,y,calir,formar,tamanor));
             break;}
         case 'M':
             auto direccionm=input<TipoString>("Ingrese la direccion: ");
@@ -73,7 +73,7 @@ void Menu::agregarObjeto()
             auto calim=input<TipoDoble >("Ingrese la calificacion: ");
             auto formam=input<TipoCaracter >("Ingrese la forma: ");
             auto tamanom=input<TipoEntero >("Ingrese el tamaño: ");
-            barranco.adicionarObjeto(new Museos(nombre,direccionm,eactual,color,x,y,calim,formam,tamanom));
+            barranco.adicionarObjeto(new Museos(nombre,direccionm,eactual,'B',x,y,calim,formam,tamanom));
             break;
     }
 }
@@ -96,6 +96,7 @@ void Menu::dibujarMapa() {
     barranco.dibujarTierra();
 
 }
+void Menu::mejoreslugares() {}
 
 void Menu::ejecutar() {
     do {
@@ -118,6 +119,10 @@ void Menu::seleccionarOpcion() {
         case  Opciones::Mostrar: // Dibujando Tierra
             dibujarMapa();
             break;
+   //     case  Opciones::Mejores: // Dibujando Tierra
+     //       mejoreslugares();
+       //     break;
     }
 }
+
 

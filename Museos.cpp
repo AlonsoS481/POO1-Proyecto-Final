@@ -12,3 +12,15 @@ Museos::Museos(TipoString n, TipoString d, TipoString e,TipoCaracter color,
     eactual=e;
     calificacionm=cm;
 }
+
+TipoDoble Museos::getCalifiacionm() {
+    return calificacionm;
+}
+
+//TipoCaracter Museos::getTipo() {
+  //  return tipo;
+//}
+
+//TipoEntero Museos::getCali() {
+  //  return calificacionm;
+//}

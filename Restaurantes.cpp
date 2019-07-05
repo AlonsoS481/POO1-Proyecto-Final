@@ -14,3 +14,15 @@ Restaurantes::Restaurantes(TipoString n, TipoString d, TipoString t, TipoString 
     Edeld=e;
 
 }
+
+TipoDoble Restaurantes::getCalifiacionr() {
+    return calificacionr;
+}
+
+//TipoCaracter Restaurantes::getTipo() {
+  //  return tipo;
+//}
+
+//TipoEntero Restaurantes::getCali() {
+  //  return calificacionr;
+//}

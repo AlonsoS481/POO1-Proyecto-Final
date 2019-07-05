@@ -17,6 +17,7 @@ protected:
     TipoString nombre;
     TipoCaracter forma;
     TipoEntero tamano;
+    TipoCaracter tipo;
 public:
     Objeto();
     Objeto(const TipoString& nombre, TipoCaracter color,
@@ -31,6 +32,8 @@ public:
     string mostrarPosicion();
     char getForma();
     TipoEntero getTamano();
+   // virtual TipoCaracter getTipo();
+    //virtual TipoEntero getCali();
 
 };
 

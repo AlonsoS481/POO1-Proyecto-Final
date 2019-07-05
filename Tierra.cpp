@@ -14,26 +14,15 @@ using namespace std;
 TipoEntero Tierra::getAltura() {
     return ALTURA;
 }
-//<<<<<<< HEAD
+
 TipoEntero Tierra::getAncho() {
     return ANCHO;
 }
 
-//=======
-//>>>>>>> 2d43e424b181bc25ebaf23c57121ce96686ec79f
 Tierra::Tierra() {
     plano=nullptr;
 }
-  //  plano.resize(ALTURA);
-    //for (auto& item: plano)
-      //  item.resize(ANCHO);
-//}
-Tierra::Tierra(TipoEntero altura, TipoEntero ancho) {
-
-    //plano.resize(altura);
-    //for (auto& item: plano)
-      //  item.resize(ancho);
-}
+Tierra::Tierra(TipoEntero altura, TipoEntero ancho) {}
 Tierra::~Tierra() {
     delete plano;
     plano= nullptr;
@@ -62,16 +51,6 @@ Objeto* Tierra::removerObjeto(string& nombre) {
     return nullptr;
 }
 
-void Tierra::imprimirObjetos() {
-    int i = 0;
-    for (auto& item: objetos) {
-        cout << "* * * * * * [" << i << "] ";
-        cout << " Nombre = " << item->getNombre() << " "
-             << item->mostrarPosicion()
-             << " Color = " << item->getColor() << '\n';
-        i++;
-    }
-}
 void Tierra::actualizarTierra() {
     for (auto &item: objetos) {
         switch(item->getForma()){
@@ -109,6 +88,10 @@ void Tierra::actualizarTierra() {
 
     }
 }
+TipoEntero Tierra::getCantidadObjectos() {
+    return objetos.size();
+}
+
 void Tierra::dibujarTierra() {
     plano = new sf::RenderWindow(
             sf::VideoMode(900,900),"Proyecto Final");
@@ -126,4 +109,22 @@ void Tierra::dibujarTierra() {
   }
 
 }
+
+//void Tierra::mejorsito() {
+  //  for(int x=0;x<objetos.size();x++){
+    //    if (objetos[x]->getTipo()=='H'){
+      //      if(objetos[x]->getCali()<objetos[x+1]->getCali())
+        //        objetos[x]->getCali();
+        //}
+        //if (objetos[x]->getTipo()=='R'){
+         //   if(objetos[x]->getCali()<objetos[x+1]->getCali())
+           //     objetos[x]->getCali();
+            //}
+        //if (objetos[x]->getTipo()=='M'){
+          //  if(objetos[x]->getCali()<objetos[x+1]->getCali())
+            //    objetos[x]->getCali();
+            //}
+    //}
+//}
+
 

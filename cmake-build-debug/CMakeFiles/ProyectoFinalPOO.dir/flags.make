@@ -6,5 +6,5 @@ CXX_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -IC:\Users\Luis\CLionProjects\POO1-Proyecto-Final\SFML_INCLUDE_DIR -IC:\shared\SFML-2.5.1\include 
+CXX_INCLUDES = -IC:\Users\Luis\Desktop\Prueba\SFML_INCLUDE_DIR -IC:\shared\SFML-2.5.1\include 
 

@@ -9,11 +9,10 @@
 #include "Tipos.h"
 #include <iostream>
 #include <limits>
+#include "Objeto.h"
 #include "Restaurantes.h"
 #include "Hoteles.h"
 #include "Museos.h"
-using namespace std;
-
 template <typename T>
 T input(string label) {
     T value;
@@ -43,6 +42,7 @@ class Menu {
     void agregarObjeto();
     void removerObjeto();
     void dibujarMapa();
+    void mejoreslugares();
 public:
     Menu(): opcion{} {}
     void ejecutar();

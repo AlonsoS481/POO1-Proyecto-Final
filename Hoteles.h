@@ -11,10 +11,14 @@ class Hoteles: public Objeto {
     TipoString Estrellas;
     TipoString disponibilidad;
     TipoDoble calificacionh;
+    TipoCaracter tipo='H';
 public:
     Hoteles();
     Hoteles(TipoString n,TipoString d,TipoEntero e,TipoString di,TipoCaracter color,
             TipoEntero posX, TipoEntero posY,TipoDoble ch,TipoCaracter f,TipoEntero t);
+    TipoDoble getCalificacionh();
+ //   TipoCaracter getTipo()override ;
+   // TipoEntero getCali()override;
 
 };
 

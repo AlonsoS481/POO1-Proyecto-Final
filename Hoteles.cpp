@@ -13,3 +13,16 @@ Hoteles::Hoteles(TipoString n, TipoString d, TipoEntero e, TipoString di,TipoCar
     disponibilidad=di;
     calificacionh=ch;
 }
+
+TipoDoble Hoteles::getCalificacionh() {
+    return calificacionh;
+}
+
+//TipoCaracter Hoteles::getTipo() {
+  //  return 'H';
+//}
+
+//TipoEntero Hoteles::getCali() {
+  //  return calificacionh;
+//}
+

@@ -16,6 +16,9 @@ public:
     Museos();
     Museos(TipoString n,TipoString d,TipoString e,TipoCaracter color,
            TipoEntero posX, TipoEntero posY,TipoDoble cm,TipoCaracter f,TipoEntero t);
+    TipoDoble getCalifiacionm();
+ //   TipoCaracter getTipo()override ;
+   // TipoEntero getCali()override;
 };
 
 

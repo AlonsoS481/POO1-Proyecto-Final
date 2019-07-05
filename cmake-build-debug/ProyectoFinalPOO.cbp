@@ -8,23 +8,23 @@
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\shared\;CMake Files\..\..\..\..\shared\SFML-2.5.1\;CMake Files\..\..\..\..\shared\SFML-2.5.1\lib\;CMake Files\..\..\..\..\shared\SFML-2.5.1\lib\cmake\;CMake Files\..\..\..\..\shared\SFML-2.5.1\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Luis/Desktop/Prueba/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ProyectoFinalPOO">
-				<Option output="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/cmake-build-debug/ProyectoFinalPOO.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/cmake-build-debug"/>
+				<Option output="C:/Users/Luis/Desktop/Prueba/cmake-build-debug/ProyectoFinalPOO.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Luis/Desktop/Prueba/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/SFML_INCLUDE_DIR"/>
+					<Add directory="C:/Users/Luis/Desktop/Prueba/SFML_INCLUDE_DIR"/>
 					<Add directory="C:/shared/SFML-2.5.1/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include"/>
@@ -36,20 +36,20 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 ProyectoFinalPOO"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 ProyectoFinalPOO"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ProyectoFinalPOO/fast">
-				<Option output="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/cmake-build-debug/ProyectoFinalPOO.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/cmake-build-debug"/>
+				<Option output="C:/Users/Luis/Desktop/Prueba/cmake-build-debug/ProyectoFinalPOO.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Luis/Desktop/Prueba/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/SFML_INCLUDE_DIR"/>
+					<Add directory="C:/Users/Luis/Desktop/Prueba/SFML_INCLUDE_DIR"/>
 					<Add directory="C:/shared/SFML-2.5.1/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include"/>
@@ -61,94 +61,94 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 ProyectoFinalPOO/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 ProyectoFinalPOO/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Luis/Desktop/Prueba/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Luis/Desktop/Prueba/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Luis\CLionProjects\POO1-Proyecto-Final\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Luis\Desktop\Prueba\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Hoteles.cpp">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Hoteles.cpp">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Hoteles.h">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Hoteles.h">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Menu.cpp">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Menu.cpp">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Menu.h">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Menu.h">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Museos.cpp">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Museos.cpp">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Museos.h">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Museos.h">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Objeto.cpp">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Objeto.cpp">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Objeto.h">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Objeto.h">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Restaurantes.cpp">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Restaurantes.cpp">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Restaurantes.h">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Restaurantes.h">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Tierra.cpp">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Tierra.cpp">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Tierra.h">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Tierra.h">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/Tipos.h">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/Tipos.h">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/main.cpp">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/main.cpp">
 			<Option target="ProyectoFinalPOO"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/CMakeLists.txt">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\shared\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\shared\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\shared\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-debug.cmake">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-debug.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\shared\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\shared\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Luis/CLionProjects/POO1-Proyecto-Final/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake">
+		<Unit filename="C:/Users/Luis/Desktop/Prueba/../../../../shared/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\shared\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>

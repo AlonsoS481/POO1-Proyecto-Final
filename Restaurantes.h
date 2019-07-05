@@ -17,7 +17,9 @@ public:
     Restaurantes();
     Restaurantes(TipoString n, TipoString d, TipoString t, TipoString e,TipoCaracter color,
                  TipoEntero posX, TipoEntero posY,TipoDoble cr,TipoCaracter f,TipoEntero tm);
-
+    TipoDoble getCalifiacionr();
+  //  TipoCaracter getTipo()override ;
+    //TipoEntero getCali()override;
 };
 
 

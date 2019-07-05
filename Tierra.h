@@ -13,7 +13,6 @@ using namespace std;
 // Valores constantes
 const TipoEntero ALTURA = 900;
 const TipoEntero ANCHO  = 900;
-
 class Tierra {
 private:
     sf::RenderWindow* plano;
@@ -24,12 +23,12 @@ public:
     virtual ~Tierra();
     void adicionarObjeto(Objeto* objeto);
     Objeto* removerObjeto(string& nombre);
-    void imprimirObjetos();
     TipoEntero getAltura();
     TipoEntero getAncho();
     TipoEntero getCantidadObjectos();
     void dibujarTierra();
     void actualizarTierra();
+    void mejorsito();
 
 };
 
