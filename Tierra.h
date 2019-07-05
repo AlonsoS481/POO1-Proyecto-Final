@@ -11,9 +11,8 @@
 #include "Objeto.h"
 using namespace std;
 // Valores constantes
-const TipoEntero ALTURA = 21;
-const TipoEntero ANCHO  = 21;
-const TipoCaracter COLOR ='.';
+const TipoEntero ALTURA = 900;
+const TipoEntero ANCHO  = 900;
 
 class Tierra {
 private:

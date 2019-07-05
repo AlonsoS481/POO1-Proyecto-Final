@@ -6,9 +6,9 @@
 Objeto::Objeto(): color{}, posX{}, posY{}  {}
 
 Objeto::Objeto(const TipoString& nombre, TipoCaracter color,
-               TipoEntero posX, TipoEntero posY):
+               TipoEntero posX, TipoEntero posY,TipoCaracter f,TipoEntero t):
         nombre{nombre}, color{color},
-        posX{posX}, posY{posY} {}
+        posX{posX}, posY{posY} ,forma{f},tamano{t}{}
 
 Objeto::~Objeto() {}
 
@@ -23,4 +23,13 @@ TipoCaracter Objeto::getColor()  { return color; }
 TipoString Objeto::mostrarPosicion() {
     return "X = " + to_string(posX) + " Y = " + to_string(posY);
 }
+
+char Objeto::getForma() {
+    return forma;
+}
+
+TipoEntero Objeto::getTamano() {
+    return tamano;
+}
+
 

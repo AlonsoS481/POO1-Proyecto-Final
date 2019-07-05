@@ -29,8 +29,7 @@ Tierra::Tierra() {
       //  item.resize(ANCHO);
 //}
 Tierra::Tierra(TipoEntero altura, TipoEntero ancho) {
-    plano = new sf::RenderWindow(
-            sf::VideoMode(altura,ancho),"Proyecto Final");
+
     //plano.resize(altura);
     //for (auto& item: plano)
       //  item.resize(ancho);
@@ -75,14 +74,44 @@ void Tierra::imprimirObjetos() {
 }
 void Tierra::actualizarTierra() {
     for (auto &item: objetos) {
-        sf::CircleShape shape(10);
-        shape.setFillColor(colores[item->getColor()]);
-        shape.setPosition(item->getPosX(), item->getPosY());
-        plano->draw(shape);
+        switch(item->getForma()){
+            case 'C': {
+                sf::CircleShape shape(item->getTamano());
+                shape.setFillColor(colores[item->getColor()]);
+                shape.setPosition(item->getPosX(), item->getPosY());
+                plano->draw(shape);
+                break;
+            }
+            case 'S':{
+                sf::CircleShape square(item->getTamano(), 4);
+                square.setFillColor(colores[item->getColor()]);
+                square.setPosition(item->getPosX(), item->getPosY());
+                plano->draw(square);
+                break;}
+            case 'O':{
+                sf::CircleShape octagon(item->getTamano(), 8);
+                octagon.setFillColor(colores[item->getColor()]);
+                octagon.setPosition(item->getPosX(), item->getPosY());
+                plano->draw(octagon);
+                break;}
+            case'T':{
+                sf::CircleShape triangle(item->getTamano(), 3);
+                triangle.setFillColor(colores[item->getColor()]);
+                triangle.setPosition(item->getPosX(), item->getPosY());
+                plano->draw(triangle);
+                break;
+            }
+
+
+        }
+
+
 
     }
 }
 void Tierra::dibujarTierra() {
+    plano = new sf::RenderWindow(
+            sf::VideoMode(900,900),"Proyecto Final");
     if(plano== nullptr) return;
     while (plano->isOpen()){
        sf::Event event;

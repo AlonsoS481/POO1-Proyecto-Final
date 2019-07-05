@@ -15,10 +15,12 @@ private:
     TipoEntero    posY;
 protected:
     TipoString nombre;
+    TipoCaracter forma;
+    TipoEntero tamano;
 public:
     Objeto();
     Objeto(const TipoString& nombre, TipoCaracter color,
-           TipoEntero posX, TipoEntero posY);
+           TipoEntero posX, TipoEntero posY,TipoCaracter f,TipoEntero t);
     virtual ~Objeto();
     void setNombre(const TipoString& nombre);
     string     getNombre();
@@ -27,6 +29,8 @@ public:
     char getColor();
     void moverse(TipoEntero x, TipoEntero y);
     string mostrarPosicion();
+    char getForma();
+    TipoEntero getTamano();
 
 };
 

@@ -11,10 +11,11 @@
 class Museos: public Objeto {
     TipoString direccion;
     TipoString eactual;
+    TipoDoble calificacionm;
 public:
     Museos();
     Museos(TipoString n,TipoString d,TipoString e,TipoCaracter color,
-           TipoEntero posX, TipoEntero posY);
+           TipoEntero posX, TipoEntero posY,TipoDoble cm,TipoCaracter f,TipoEntero t);
 };
 
 

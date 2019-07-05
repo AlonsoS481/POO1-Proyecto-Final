@@ -34,7 +34,6 @@ void Menu::agregarObjeto()
 {
     auto nombre = input<TipoString>("Ingrese Nombre : ");
     auto color  = input<TipoCaracter>("Ingrese color (Un caracter): ");
-    auto tipo = input<TipoCaracter >("Ingrese el tipo de objeto('H','R','M'): ");
     auto x = input<TipoEntero>("Ingrese posicion X : ");
     while (x < 0 || x >= tierra.getAncho()) {
         cout << "Posicion X Incorrecta, los limites son: 0, "
@@ -48,19 +47,39 @@ void Menu::agregarObjeto()
               << tierra.getAltura() - 1 << "\n";
         y = input<TipoEntero>("Ingrese posicion Y : ");
     }
+    auto tipo = input<TipoCaracter >("Ingrese el tipo de objeto('H','R','M'): ");
     switch(tipo){
-        case 'H':
-            barranco.adicionarObjeto(new Hoteles(nombre,"cinco","Avenido xd","Abierto",color,x,y));
-        case 'R':
-            barranco.adicionarObjeto(new Restaurantes(nombre,"cinco","Avenido xd","Abierto",color,x,y));
+        case 'H':{
+            auto direccionh=input<TipoString>("Ingrese la direccion: ");
+            auto estrellas=input<TipoEntero>("Ingrese el numero de estrellas: ");
+            auto disponibilidad=input<TipoString>("Ingrese la disponibilidad: ");
+            auto calih=input<TipoDoble >("Ingrese la calificacion: ");
+            auto formah=input<TipoCaracter >("Ingrese la forma: ");
+            auto tamanoh=input<TipoEntero >("Ingrese el tamaño: ");
+            barranco.adicionarObjeto(new Hoteles(nombre,direccionh,estrellas,disponibilidad,color,x,y,calih,formah,tamanoh));
+            break;}
+        case 'R':{
+            auto direccionr=input<TipoString>("Ingrese la direccion: ");
+            auto tipodecomida=input<TipoString>("Ingrese el tipo de comida: ");
+            auto edeldia=input<TipoString>("Ingrese la especialidad del dia: ");
+            auto calir=input<TipoDoble >("Ingrese la calificacion: ");
+            auto formar=input<TipoCaracter >("Ingrese la forma: ");
+            auto tamanor=input<TipoEntero >("Ingrese el tamaño: ");
+            barranco.adicionarObjeto(new Restaurantes(nombre,direccionr,tipodecomida,edeldia,color,x,y,calir,formar,tamanor));
+            break;}
         case 'M':
-            barranco.adicionarObjeto(new Museos(nombre,"Avenido xd","Abierto",color,x,y));
+            auto direccionm=input<TipoString>("Ingrese la direccion: ");
+            auto eactual=input<TipoString>("Ingrese la exposcion actual: ");
+            auto calim=input<TipoDoble >("Ingrese la calificacion: ");
+            auto formam=input<TipoCaracter >("Ingrese la forma: ");
+            auto tamanom=input<TipoEntero >("Ingrese el tamaño: ");
+            barranco.adicionarObjeto(new Museos(nombre,direccionm,eactual,color,x,y,calim,formam,tamanom));
+            break;
     }
 }
 
 void Menu::removerObjeto() {
     auto nombre = input<TipoString>("Ingrese Nombre: ");
-
     auto obj = barranco.removerObjeto(nombre);  //-- separa el objeto de la tierra
     if (obj == nullptr) {
         cout << "Objeto No existe\n";
@@ -68,6 +87,7 @@ void Menu::removerObjeto() {
     else {
         delete obj;
         cout << "Objeto: " << nombre << " ha sido removido\n";
+
     }
     esperar();
 }

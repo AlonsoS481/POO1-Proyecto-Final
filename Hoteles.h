@@ -10,10 +10,11 @@ class Hoteles: public Objeto {
     TipoString direccion;
     TipoString Estrellas;
     TipoString disponibilidad;
+    TipoDoble calificacionh;
 public:
     Hoteles();
-    Hoteles(TipoString n,TipoString d,TipoString e,TipoString di,TipoCaracter color,
-            TipoEntero posX, TipoEntero posY);
+    Hoteles(TipoString n,TipoString d,TipoEntero e,TipoString di,TipoCaracter color,
+            TipoEntero posX, TipoEntero posY,TipoDoble ch,TipoCaracter f,TipoEntero t);
 
 };
 

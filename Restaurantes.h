@@ -12,10 +12,11 @@ class Restaurantes: public Objeto {
     TipoString direccion;
     TipoString tcomida;
     TipoString Edeld;
+    TipoDoble calificacionr;
 public:
     Restaurantes();
     Restaurantes(TipoString n, TipoString d, TipoString t, TipoString e,TipoCaracter color,
-                 TipoEntero posX, TipoEntero posY);
+                 TipoEntero posX, TipoEntero posY,TipoDoble cr,TipoCaracter f,TipoEntero tm);
 
 };
 
